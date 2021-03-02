@@ -1,0 +1,42 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 33 1 8 out_sr_s
+$SC 1-29/4
+$IN +5 2 Enable
+I 3 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 50 3 3 Opt_Alu
+$SC 38-+8/4
+$BUS IN 83 1 8 X_Alu
+$SC 51-79/4
+$IN +5 2 Cin
+$BUS OUT +36 1 8 Out_Alu
+$SC 88-+28/4
+$BUS S +37 1 8 out_Arithmetic_s
+$SC 121-+28/4
+$OUT +5 2 Carry_Alu
+$BUS S +36 1 8 out_logic_s
+$SC 158-+28/4
+$BUS S +37 1 8 4 2 sl
+$SC 191-+28/4
+$S +5 2 zero_logic_s
+$S +4 2 5 4 arithmet
+$S +4 2 5 2 sr
+I 4 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN +12 4 2 Sel_Alu
+$SC +-8 +4
+$S +5 2 zero_sl_s
+$OUT +4 2 Zero_Alu
+$BUS IN +36 1 8 Y_Alu
+$SC 253-+28/4
+$BUS IN +37 1 8 Const
+$SC 286-+28/4
+$S +5 2 carry_sl_s
+$S +4 2 7 2 r
+$S +4 2 6 2 arithmetic
+$S +4 2 7 2 lu
+$S +4 2 0 6 zero
+$BUS S +36 1 8 0 6 out
+$SC 339-+28/4
+$ENDWAVE

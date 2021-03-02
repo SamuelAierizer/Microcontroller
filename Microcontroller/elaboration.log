@@ -1,0 +1,54 @@
+elbread.dll ver. 1.0.5.365 Wed Jun 12 11:49:11 2019
+
+
+----------------------------------------------------------
+Entity                 | Architecture    | Library      
+----------------------------------------------------------
+ms                     | arh_ms          | Program_Control
+kcpsm                  | microcontroller | program_control
+program_memory         | beh             | program_control
+clock_split            | desc            | program_control
+control_unit           | cu              | program_control
+mux8_2_1               | mux8_2_1        | program_control
+alu                    | alu_block       | program_control
+register_block         | struct          | program_control
+port_address_control   | beh             | program_control
+zero_carry_flags       | beh             | program_control
+interrupt_flag_store   | beh             | program_control
+program_flow_control   | beh             | program_control
+logic_block            | logic           | program_control
+arithmetic_block       | arithmetic      | program_control
+shift_right            | beh             | program_control
+shift_left             | beh             | program_control
+mux8_4_1               | flux            | program_control
+mux_4_1                | flux            | program_control
+load_block             | load            | program_control
+and_block              | flux            | program_control
+or_block               | flux            | program_control
+xor_block              | flux            | program_control
+mux_2_1                | mux_2_1         | program_control
+add_block              | add             | program_control
+subb_block             | subb            | program_control
+complete_adder         | flux            | program_control
+xor3_gate              | flux            | program_control
+or_gate                | flux            | program_control
+and_gate               | flux            | program_control
+complete_subb          | flux            | program_control
+demux_1_16             | beh             | program_control
+mux8_16_1              | beh             | program_control
+demux8_1_2             | beh             | program_control
+regi8                  | struct          | program_control
+d_ff                   | beh             | program_control
+counter                | count           | program_control
+program_counter_stack  | beh             | program_control
+----------------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+numeric_std         | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

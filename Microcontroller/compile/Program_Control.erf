@@ -1,0 +1,8 @@
+MESSAGE "File: d:\College\Microcontroller\Microcontroller\src\Program_Flow_Control.vhd" 
+MESSAGE "Compile Entity "counter"" 
+MESSAGE "Entity `counter' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "count" of Entity "counter"" 
+MESSAGE "Compile Entity "Program_Flow_Control"" 
+MESSAGE "Entity `Program_Flow_Control' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "beh" of Entity "Program_Flow_Control"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]" 

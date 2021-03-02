@@ -1,0 +1,44 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 33 1 8 Out_Port
+$SC 1-29/4
+$S +5 2 INTERRUPT
+$BUS S 70 1 8 IN_PORT
+$SC 38-66/4
+$BUS S +37 1 8 Port_Id
+$SC 71-99/4
+$S +5 2 Reset
+$S +4 2 CLK
+$S +4 2 Write_Strobe
+$S +4 2 0 7 Read
+I 3 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +68 3 16 "UCT/instruction_s"
+$SC 120-+60/4
+$BUS S +37 1 8 4 2 address
+$SC 185-+28/4
+$S +5 2 4 2 en_regi
+$BUS S +36 1 8 4 2 out_x
+$SC 222-+28/4
+I 4 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +21 4 4 4 4 sel
+$SC 255-+12/4
+$BUS S +37 1 8 4 2 out_y
+$SC 272-+28/4
+$BUS S +21 4 4 4 4 sel
+$SC 305-+12/4
+$S +5 2 4 2 alu_enable
+I 5 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +16 5 3 4 2 opt_alu
+$SC 326-+8/4
+$BUS S +37 1 8 5 7 u
+$SC 339-+28/4
+$BUS S +37 1 8 4 2 const
+$SC 372-+28/4
+$BUS S +37 1 8 "UCT/in_regi"
+$SC 405-+28/4
+I 6 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +13 6 2 "UCT/sel_alu_s"
+$SC +-8 +4
+$ENDWAVE

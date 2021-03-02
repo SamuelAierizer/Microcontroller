@@ -1,0 +1,68 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 CLK
+$IN 5 1 Carry
+$IN 9 1 Zero
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 45 2 8 Const
+$SC 13-41/4
+I 3 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 66 3 5 Sel
+$SC 46-62/4
+$BUS OUT 99 2 8 Address
+$SC 67-95/4
+I 4 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +13 4 2 Stack
+$SC +-8 +4
+$IN 5 0 Carry
+$IN 9 0 Zero
+$IN 109 1 R
+$BUS OUT +4 2 8 Address
+$SC 67-95/4
+$BUS IN +19 3 5 Sel
+$SC 46-62/4
+$IN 1 0 Clk
+$BUS IN 115 2 8 Const
+$SC 13-41/4
+$IN +75 1 EN
+$S +4 1 en_s
+$BUS S +36 2 8 from_stack
+$SC 124-+28/4
+$BUS S +5 4 2 Stack
+$SC 100 +4
+$S +54 1 mux_cond
+$BUS S +36 2 8 par_load
+$SC 162-+28/4
+$BUS S +37 2 8 add_s
+$SC 195-+28/4
+$BUS S +37 2 8 to_stack
+$SC 228-+28/4
+$S +5 1 cond
+$S +4 1 Load
+$IN 5 0 Carry
+$IN 9 0 Zero
+$IN 109 0 R
+$BUS OUT 269 2 8 Address
+$SC 67-95/4
+$BUS IN 270 3 5 Sel
+$SC 46-62/4
+$IN 1 0 Clk
+$BUS IN 271 2 8 Const
+$SC 13-41/4
+$IN +75 0 EN
+$S +4 0 en_s
+$BUS S 272 2 8 from_stack
+$SC 124-+28/4
+$BUS S 273 4 2 Stack
+$SC 100 +4
+$S +54 0 mux_cond
+$BUS S 274 2 8 par_load
+$SC 162-+28/4
+$BUS S +85 2 8 add_s
+$SC 195-+28/4
+$BUS S +53 2 8 to_stack
+$SC 228-+28/4
+$S +5 0 cond
+$S +4 0 Load
+$ENDWAVE

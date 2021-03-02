@@ -1,0 +1,41 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 33 1 8 "UCT/out_alu_s"
+$SC 1-29/4
+I 3 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 50 3 4 4 2 sel_y
+$SC 34-46/4
+$BUS S 83 1 8 4 4 out
+$SC 51-79/4
+$BUS S +21 3 4 4 2 sel_x
+$SC 84-96/4
+$BUS S +37 1 8 4 4 out
+$SC 101-+28/4
+$BUS S +37 1 8 4 2 address
+$SC 134-+28/4
+I 4 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +69 4 16 4 2 instruction
+$SC 167-+60/4
+$S +5 2 CLK
+$S +4 2 "UCT/clk_1"
+$S +4 2 8 0 "2"
+$S +4 2 8 0 stack
+$S +4 2 Read_Strobe
+$S +4 2 0 7 Write
+$BUS S +36 1 8 Out_Port
+$SC 256-+28/4
+$BUS S +37 1 8 Port_Id
+$SC 289-+28/4
+I 5 "a#3#REG1 rict0 15 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 834 5 16 "UCT/Regi/s"
+$SC 322-830/4
+I 6 "a#3#mem1 rict0 14 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +501 6 15 "UCT/Program_Control/LIFO/reg"
+$SC 851-+476/4
+$BUS S +52 1 8 IN_PORT
+$SC +-32-+28/4
+$S +5 2 INTERRUPT
+$S +4 2 Reset
+$ENDWAVE

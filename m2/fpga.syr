@@ -1,0 +1,1361 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: fpga.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fpga.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fpga"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : fpga
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Zero_Carry_Flags.vhd" into library work
+Parsing entity <zero_carry_flags>.
+Parsing architecture <beh> of entity <zero_carry_flags>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Shift_Rigtht.vhd" into library work
+Parsing entity <Shift_Right>.
+Parsing architecture <beh> of entity <shift_right>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Shift_Left.vhd" into library work
+Parsing entity <Shift_Left>.
+Parsing architecture <beh> of entity <shift_left>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd" into library work
+Parsing entity <d_ff>.
+Parsing architecture <beh> of entity <d_ff>.
+Parsing entity <Regi8>.
+Parsing architecture <struct> of entity <regi8>.
+Parsing entity <Demux_1_16>.
+Parsing architecture <beh> of entity <demux_1_16>.
+Parsing entity <Demux8_1_2>.
+Parsing architecture <beh> of entity <demux8_1_2>.
+Parsing entity <Mux8_16_1>.
+Parsing architecture <beh> of entity <mux8_16_1>.
+Parsing entity <Register_Block>.
+Parsing architecture <struct> of entity <register_block>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Memory.vhd" into library work
+Parsing entity <Program_Memory>.
+Parsing architecture <beh> of entity <program_memory>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Flow_Control.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <count> of entity <counter>.
+Parsing entity <Program_Flow_Control>.
+Parsing architecture <beh> of entity <program_flow_control>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Counter_Stack.vhd" into library work
+Parsing entity <program_counter_stack>.
+Parsing architecture <beh> of entity <program_counter_stack>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Port_Address_Control.vhd" into library work
+Parsing entity <port_address_control>.
+Parsing architecture <beh> of entity <port_address_control>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Logic_Block.vhd" into library work
+Parsing entity <Load_Block>.
+Parsing architecture <Load> of entity <load_block>.
+Parsing entity <And_Block>.
+Parsing architecture <flux> of entity <and_block>.
+Parsing entity <Or_Block>.
+Parsing architecture <flux> of entity <or_block>.
+Parsing entity <Xor_Block>.
+Parsing architecture <flux> of entity <xor_block>.
+Parsing entity <Logic_Block>.
+Parsing architecture <Logic> of entity <logic_block>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\kcpsm.vhd" into library work
+Parsing entity <Clock_Split>.
+Parsing architecture <desc> of entity <clock_split>.
+Parsing entity <kcpsm>.
+Parsing architecture <microcontroller> of entity <kcpsm>.
+Parsing entity <ms>.
+Parsing architecture <arh_ms> of entity <ms>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Interrupt_Flag_Store.vhd" into library work
+Parsing entity <Interrupt_Flag_Store>.
+Parsing architecture <beh> of entity <interrupt_flag_store>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\fgpa.vhd" into library work
+Parsing entity <fpga>.
+Parsing architecture <desc> of entity <fpga>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Control_Unit.vhd" into library work
+Parsing entity <Control_Unit>.
+Parsing architecture <cu> of entity <control_unit>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd" into library work
+Parsing entity <Mux8_2_1>.
+Parsing architecture <Mux8_2_1> of entity <mux8_2_1>.
+Parsing entity <Mux_2_1>.
+Parsing architecture <Mux_2_1> of entity <mux_2_1>.
+Parsing entity <And_gate>.
+Parsing architecture <flux> of entity <and_gate>.
+Parsing entity <Or_gate>.
+Parsing architecture <flux> of entity <or_gate>.
+Parsing entity <Xor3_gate>.
+Parsing architecture <flux> of entity <xor3_gate>.
+Parsing entity <Complete_Adder>.
+Parsing architecture <flux> of entity <complete_adder>.
+Parsing entity <Complete_Subb>.
+Parsing architecture <flux> of entity <complete_subb>.
+Parsing entity <Add_Block>.
+Parsing architecture <Add> of entity <add_block>.
+Parsing entity <Subb_Block>.
+Parsing architecture <Subb> of entity <subb_block>.
+Parsing entity <Arithmetic_Block>.
+Parsing architecture <Arithmetic> of entity <arithmetic_block>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Alu.vhd" into library work
+Parsing entity <Mux8_4_1>.
+Parsing architecture <flux> of entity <mux8_4_1>.
+Parsing entity <Mux_4_1>.
+Parsing architecture <flux> of entity <mux_4_1>.
+Parsing entity <ALU>.
+Parsing architecture <ALU_Block> of entity <alu>.
+Parsing VHDL file "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Afisor.vhd" into library work
+Parsing entity <afisor>.
+Parsing architecture <comp> of entity <afisor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fpga> (architecture <desc>) from library <work>.
+
+Elaborating entity <kcpsm> (architecture <microcontroller>) from library <work>.
+
+Elaborating entity <Program_Memory> (architecture <beh>) from library <work>.
+
+Elaborating entity <Clock_Split> (architecture <desc>) from library <work>.
+
+Elaborating entity <Control_Unit> (architecture <cu>) from library <work>.
+
+Elaborating entity <Mux8_2_1> (architecture <Mux8_2_1>) from library <work>.
+
+Elaborating entity <ALU> (architecture <ALU_Block>) from library <work>.
+
+Elaborating entity <Logic_Block> (architecture <Logic>) from library <work>.
+
+Elaborating entity <Load_Block> (architecture <Load>) from library <work>.
+
+Elaborating entity <And_Block> (architecture <flux>) from library <work>.
+
+Elaborating entity <Or_Block> (architecture <flux>) from library <work>.
+
+Elaborating entity <Xor_Block> (architecture <flux>) from library <work>.
+
+Elaborating entity <Mux8_4_1> (architecture <flux>) from library <work>.
+
+Elaborating entity <Arithmetic_Block> (architecture <Arithmetic>) from library <work>.
+
+Elaborating entity <Mux_2_1> (architecture <Mux_2_1>) from library <work>.
+
+Elaborating entity <Add_Block> (architecture <Add>) from library <work>.
+
+Elaborating entity <Complete_Adder> (architecture <flux>) from library <work>.
+
+Elaborating entity <Xor3_gate> (architecture <flux>) from library <work>.
+
+Elaborating entity <Or_gate> (architecture <flux>) from library <work>.
+
+Elaborating entity <And_gate> (architecture <flux>) from library <work>.
+
+Elaborating entity <Subb_Block> (architecture <Subb>) from library <work>.
+
+Elaborating entity <Complete_Subb> (architecture <flux>) from library <work>.
+
+Elaborating entity <Shift_Right> (architecture <beh>) from library <work>.
+
+Elaborating entity <Shift_Left> (architecture <beh>) from library <work>.
+
+Elaborating entity <Mux_4_1> (architecture <flux>) from library <work>.
+
+Elaborating entity <Register_Block> (architecture <struct>) from library <work>.
+
+Elaborating entity <Demux_1_16> (architecture <beh>) from library <work>.
+
+Elaborating entity <Regi8> (architecture <struct>) from library <work>.
+
+Elaborating entity <d_ff> (architecture <beh>) from library <work>.
+
+Elaborating entity <Mux8_16_1> (architecture <beh>) from library <work>.
+
+Elaborating entity <Demux8_1_2> (architecture <beh>) from library <work>.
+
+Elaborating entity <port_address_control> (architecture <beh>) from library <work>.
+
+Elaborating entity <zero_carry_flags> (architecture <beh>) from library <work>.
+
+Elaborating entity <Interrupt_Flag_Store> (architecture <beh>) from library <work>.
+
+Elaborating entity <Program_Flow_Control> (architecture <beh>) from library <work>.
+
+Elaborating entity <counter> (architecture <count>) from library <work>.
+
+Elaborating entity <program_counter_stack> (architecture <beh>) from library <work>.
+
+Elaborating entity <afisor> (architecture <comp>) from library <work>.
+INFO:HDLCompiler:679 - "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Afisor.vhd" Line 88. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fpga>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\fgpa.vhd".
+    Summary:
+	no macro.
+Unit <fpga> synthesized.
+
+Synthesizing Unit <kcpsm>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\kcpsm.vhd".
+    Found 1-bit register for signal <nr>.
+    Found 1-bit register for signal <clk_stack>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <kcpsm> synthesized.
+
+Synthesizing Unit <Program_Memory>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Memory.vhd".
+WARNING:Xst:2999 - Signal 'inst', unconnected in block 'Program_Memory', is tied to its initial value.
+    Found 256x16-bit single-port Read Only RAM <Mram_inst> for signal <inst>.
+    Found 16-bit register for signal <Instruction>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <Program_Memory> synthesized.
+
+Synthesizing Unit <Clock_Split>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\kcpsm.vhd".
+    Register <nr<0>> equivalent to <opt> has been removed
+    Found 1-bit register for signal <opt>.
+WARNING:Xst:737 - Found 1-bit latch for signal <cond>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   1 Multiplexer(s).
+Unit <Clock_Split> synthesized.
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Control_Unit.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <Sel_Alu<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Opt_Alu<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Opt_Alu<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Opt_Alu<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Sel_port>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Sel_Alu<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   6 Latch(s).
+	inferred  25 Multiplexer(s).
+Unit <Control_Unit> synthesized.
+
+Synthesizing Unit <Mux8_2_1>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8_2_1> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Alu.vhd".
+    Found 1-bit tristate buffer for signal <Out_Alu<7>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<6>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<5>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<4>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<3>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<2>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<1>> created at line 165
+    Found 1-bit tristate buffer for signal <Out_Alu<0>> created at line 165
+    Summary:
+	inferred   8 Tristate(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Logic_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Logic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Logic_Block> synthesized.
+
+Synthesizing Unit <Load_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Logic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Load_Block> synthesized.
+
+Synthesizing Unit <And_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Logic_Block.vhd".
+    Summary:
+	no macro.
+Unit <And_Block> synthesized.
+
+Synthesizing Unit <Or_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Logic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Or_Block> synthesized.
+
+Synthesizing Unit <Xor_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Logic_Block.vhd".
+    Summary:
+Unit <Xor_Block> synthesized.
+
+Synthesizing Unit <Mux8_4_1>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Alu.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <X> created at line 19.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8_4_1> synthesized.
+
+Synthesizing Unit <Arithmetic_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Arithmetic_Block> synthesized.
+
+Synthesizing Unit <Mux_2_1>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux_2_1> synthesized.
+
+Synthesizing Unit <Add_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Add_Block> synthesized.
+
+Synthesizing Unit <Complete_Adder>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Complete_Adder> synthesized.
+
+Synthesizing Unit <Xor3_gate>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+Unit <Xor3_gate> synthesized.
+
+Synthesizing Unit <Or_gate>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Or_gate> synthesized.
+
+Synthesizing Unit <And_gate>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <And_gate> synthesized.
+
+Synthesizing Unit <Subb_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Subb_Block> synthesized.
+
+Synthesizing Unit <Complete_Subb>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Arithmetic_Block.vhd".
+    Summary:
+	no macro.
+Unit <Complete_Subb> synthesized.
+
+Synthesizing Unit <Shift_Right>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Shift_Rigtht.vhd".
+    Summary:
+	no macro.
+Unit <Shift_Right> synthesized.
+
+Synthesizing Unit <Shift_Left>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Shift_Left.vhd".
+    Summary:
+	no macro.
+Unit <Shift_Left> synthesized.
+
+Synthesizing Unit <Mux_4_1>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Alu.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <X> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux_4_1> synthesized.
+
+Synthesizing Unit <Register_Block>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd".
+    Summary:
+	no macro.
+Unit <Register_Block> synthesized.
+
+Synthesizing Unit <Demux_1_16>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd".
+    Found 1-bit tristate buffer for signal <outp0> created at line 89
+    Found 1-bit tristate buffer for signal <outp1> created at line 90
+    Found 1-bit tristate buffer for signal <outp2> created at line 91
+    Found 1-bit tristate buffer for signal <outp3> created at line 92
+    Found 1-bit tristate buffer for signal <outp4> created at line 93
+    Found 1-bit tristate buffer for signal <outp5> created at line 94
+    Found 1-bit tristate buffer for signal <outp6> created at line 95
+    Found 1-bit tristate buffer for signal <outp7> created at line 96
+    Found 1-bit tristate buffer for signal <outp8> created at line 97
+    Found 1-bit tristate buffer for signal <outp9> created at line 98
+    Found 1-bit tristate buffer for signal <outp10> created at line 99
+    Found 1-bit tristate buffer for signal <outp11> created at line 100
+    Found 1-bit tristate buffer for signal <outp12> created at line 101
+    Found 1-bit tristate buffer for signal <outp13> created at line 102
+    Found 1-bit tristate buffer for signal <outp14> created at line 103
+    Found 1-bit tristate buffer for signal <outp15> created at line 104
+    Summary:
+	inferred  16 Tristate(s).
+Unit <Demux_1_16> synthesized.
+
+Synthesizing Unit <Regi8>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd".
+    Summary:
+	no macro.
+Unit <Regi8> synthesized.
+
+Synthesizing Unit <d_ff>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <d_ff> synthesized.
+
+Synthesizing Unit <Mux8_16_1>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd".
+    Found 8-bit 16-to-1 multiplexer for signal <outp> created at line 157.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8_16_1> synthesized.
+
+Synthesizing Unit <Demux8_1_2>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Register_Block.vhd".
+    Found 1-bit tristate buffer for signal <outp0<7>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<6>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<5>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<4>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<3>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<2>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<1>> created at line 123
+    Found 1-bit tristate buffer for signal <outp0<0>> created at line 123
+    Found 1-bit tristate buffer for signal <outp1<7>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<6>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<5>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<4>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<3>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<2>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<1>> created at line 124
+    Found 1-bit tristate buffer for signal <outp1<0>> created at line 124
+    Summary:
+	inferred  16 Tristate(s).
+Unit <Demux8_1_2> synthesized.
+
+Synthesizing Unit <port_address_control>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Port_Address_Control.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <port_address_control> synthesized.
+
+Synthesizing Unit <zero_carry_flags>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Zero_Carry_Flags.vhd".
+    Summary:
+	no macro.
+Unit <zero_carry_flags> synthesized.
+
+Synthesizing Unit <Interrupt_Flag_Store>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Interrupt_Flag_Store.vhd".
+    Summary:
+	no macro.
+Unit <Interrupt_Flag_Store> synthesized.
+
+Synthesizing Unit <Program_Flow_Control>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Flow_Control.vhd".
+    Found 8-bit adder for signal <to_stack> created at line 130.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Program_Flow_Control> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Flow_Control.vhd".
+    Found 8-bit register for signal <nr>.
+    Found 8-bit adder for signal <nr[7]_GND_106_o_add_0_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <program_counter_stack>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Program_Counter_Stack.vhd".
+    Found 8-bit register for signal <reg<1>>.
+    Found 8-bit register for signal <reg<2>>.
+    Found 8-bit register for signal <reg<3>>.
+    Found 8-bit register for signal <reg<4>>.
+    Found 8-bit register for signal <reg<5>>.
+    Found 8-bit register for signal <reg<6>>.
+    Found 8-bit register for signal <reg<7>>.
+    Found 8-bit register for signal <reg<8>>.
+    Found 8-bit register for signal <reg<9>>.
+    Found 8-bit register for signal <reg<10>>.
+    Found 8-bit register for signal <reg<11>>.
+    Found 8-bit register for signal <reg<12>>.
+    Found 8-bit register for signal <reg<13>>.
+    Found 8-bit register for signal <reg<14>>.
+    Found 8-bit register for signal <reg<0>>.
+    Found 4-bit register for signal <cursor>.
+    Found 8-bit register for signal <Out_Stack>.
+    Found 4-bit adder for signal <cursor[3]_GND_107_o_add_17_OUT> created at line 37.
+    Found 4-bit subtractor for signal <GND_107_o_GND_107_o_sub_36_OUT<3:0>> created at line 43.
+    Found 8-bit 15-to-1 multiplexer for signal <GND_107_o_X_89_o_wide_mux_36_OUT> created at line 44.
+    Found 4-bit comparator greater for signal <cursor[3]_PWR_44_o_LessThan_1_o> created at line 35
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 132 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <program_counter_stack> synthesized.
+
+Synthesizing Unit <afisor>.
+    Related source file is "D:\College\AN1-SEM2\Microcontroller\Microcontroller\src\Afisor.vhd".
+    Found 1-bit register for signal <clk_70Hz>.
+    Found 1-bit register for signal <aux>.
+    Found 4-bit register for signal <reg>.
+    Found 21-bit register for signal <Divizor.nr>.
+    Found 21-bit adder for signal <Divizor.nr[20]_GND_108_o_add_0_OUT> created at line 36.
+    Found 16x7-bit Read Only RAM for signal <segm>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <afisor> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 256x16-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 5
+ 21-bit adder                                          : 1
+ 4-bit addsub                                          : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 158
+ 1-bit register                                        : 137
+ 16-bit register                                       : 1
+ 21-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 17
+# Latches                                              : 7
+ 1-bit latch                                           : 7
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 64
+ 1-bit 2-to-1 multiplexer                              : 27
+ 1-bit 4-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 4
+ 8-bit 15-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 23
+ 8-bit 4-to-1 multiplexer                              : 2
+# Tristates                                            : 40
+ 1-bit tristate buffer                                 : 40
+# Xors                                                 : 33
+ 1-bit xor2                                            : 32
+ 8-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Program_Memory>.
+INFO:Xst:3226 - The RAM <Mram_inst> will be implemented as a BLOCK RAM, absorbing the following register(s): <Instruction>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Instruction>   |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Program_Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <afisor>.
+The following registers are absorbed into counter <Divizor.nr>: 1 register on signal <Divizor.nr>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segm> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <outp>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segm>          |          |
+    -----------------------------------------------------------------------
+Unit <afisor> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <nr>: 1 register on signal <nr>.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <program_counter_stack>.
+The following registers are absorbed into counter <cursor>: 1 register on signal <cursor>.
+Unit <program_counter_stack> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 256x16-bit single-port block Read Only RAM            : 1
+# Adders/Subtractors                                   : 3
+ 21-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 3
+ 21-bit up counter                                     : 1
+ 4-bit updown counter                                  : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 269
+ Flip-Flops                                            : 269
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 74
+ 1-bit 15-to-1 multiplexer                             : 8
+ 1-bit 2-to-1 multiplexer                              : 32
+ 1-bit 4-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 4
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 21
+ 8-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 33
+ 1-bit xor2                                            : 32
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit ALU: 8 internal tristates are replaced by logic (pull-up yes): Out_Alu<0>, Out_Alu<1>, Out_Alu<2>, Out_Alu<3>, Out_Alu<4>, Out_Alu<5>, Out_Alu<6>, Out_Alu<7>.
+WARNING:Xst:2042 - Unit Demux8_1_2: 16 internal tristates are replaced by logic (pull-up yes): outp0<0>, outp0<1>, outp0<2>, outp0<3>, outp0<4>, outp0<5>, outp0<6>, outp0<7>, outp1<0>, outp1<1>, outp1<2>, outp1<3>, outp1<4>, outp1<5>, outp1<6>, outp1<7>.
+WARNING:Xst:2042 - Unit Demux_1_16: 16 internal tristates are replaced by logic (pull-up yes): outp0, outp1, outp10, outp11, outp12, outp13, outp14, outp15, outp2, outp3, outp4, outp5, outp6, outp7, outp8, outp9.
+
+Optimizing unit <fpga> ...
+
+Optimizing unit <Register_Block> ...
+
+Optimizing unit <kcpsm> ...
+
+Optimizing unit <Control_Unit> ...
+
+Optimizing unit <Program_Flow_Control> ...
+
+Optimizing unit <program_counter_stack> ...
+
+Optimizing unit <Demux_1_16> ...
+
+Optimizing unit <Demux8_1_2> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <afisor> ...
+INFO:Xst:2261 - The FF/Latch <U1/clock/opt> in Unit <fpga> is equivalent to the following FF/Latch, which will be removed : <U2/Divizor.nr_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fpga, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <fpga> :
+	Found 2-bit shift register for signal <U2/reg_3>.
+Unit <fpga> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 299
+ Flip-Flops                                            : 299
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fpga.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 600
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 40
+#      LUT2                        : 10
+#      LUT3                        : 22
+#      LUT4                        : 28
+#      LUT5                        : 66
+#      LUT6                        : 237
+#      MUXCY                       : 47
+#      MUXF7                       : 71
+#      MUXF8                       : 24
+#      VCC                         : 1
+#      XORCY                       : 49
+# FlipFlops/Latches                : 307
+#      FD                          : 4
+#      FD_1                        : 2
+#      FDC                         : 8
+#      FDCE                        : 124
+#      FDE                         : 9
+#      FDR                         : 21
+#      FDRE                        : 132
+#      LD                          : 1
+#      LDE_1                       : 5
+#      LDP                         : 1
+# RAMS                             : 1
+#      RAMB18E1                    : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 10
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             307  out of  126800     0%  
+ Number of Slice LUTs:                  408  out of  63400     0%  
+    Number used as Logic:               407  out of  63400     0%  
+    Number used as Memory:                1  out of  19000     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    584
+   Number with an unused Flip Flop:     277  out of    584    47%  
+   Number with an unused LUT:           176  out of    584    30%  
+   Number of fully used LUT-FF pairs:   131  out of    584    22%  
+   Number of unique control sets:        44
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    210    11%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+-------------------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)               | Load  |
+-------------------------------------+-------------------------------------+-------+
+CLK                                  | BUFGP                               | 156   |
+Zero_OBUF                            | NONE(U1/clock/cond)                 | 1     |
+RESET                                | IBUF+BUFG                           | 5     |
+U1/CU/Read1(U1/CU/Read11:O)          | NONE(*)(U1/CU/Sel_port)             | 1     |
+U1/clk_stack                         | BUFG                                | 132   |
+U2/clk_70Hz                          | NONE(U2/reg_2)                      | 5     |
+U1/clk_2(U1/clock/Mmux_Registers11:O)| NONE(*)(U1/Program_Control/Num/nr_7)| 8     |
+U1/clock/opt                         | NONE(U1_Memory/Mram_inst)           | 1     |
+-------------------------------------+-------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------+-------+
+Control Signal                     | Buffer(FF name)          | Load  |
+-----------------------------------+--------------------------+-------+
+Zero_OBUF(XST_GND:G)               | NONE(U1_Memory/Mram_inst)| 2     |
+-----------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.139ns (Maximum Frequency: 241.628MHz)
+   Minimum input arrival time before clock: 4.607ns
+   Maximum output required time after clock: 5.637ns
+   Maximum combinational path delay: 3.043ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.139ns (frequency: 241.628MHz)
+  Total number of paths / destination ports: 55404 / 305
+-------------------------------------------------------------------------
+Delay:               4.139ns (Levels of Logic = 8)
+  Source:            U1/Regi/REGI[6].PIECE/REG[1].FF/Q (FF)
+  Destination:       U1/Flags/Zero_D/Q (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U1/Regi/REGI[6].PIECE/REG[1].FF/Q to U1/Flags/Zero_D/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.361   0.561  U1/Regi/REGI[6].PIECE/REG[1].FF/Q (U1/Regi/REGI[6].PIECE/REG[1].FF/Q)
+     LUT6:I2->O            1   0.097   0.000  U1/Regi/MUX_Y/Mmux_outp_53 (U1/Regi/MUX_Y/Mmux_outp_53)
+     MUXF7:I1->O           1   0.279   0.000  U1/Regi/MUX_Y/Mmux_outp_4_f7_0 (U1/Regi/MUX_Y/Mmux_outp_4_f71)
+     MUXF8:I0->O           3   0.218   0.305  U1/Regi/MUX_Y/Mmux_outp_2_f8_0 (U1/out_y_s<1>)
+     LUT6:I5->O            4   0.097   0.570  U1/ALU_Block/Arithmetic_b/in_aux_s<1>1 (U1/ALU_Block/Arithmetic_b/in_aux_s<1>)
+     LUT6:I2->O            4   0.097   0.309  U1/ALU_Block/Arithmetic_b/ADD/ADD_B[2].ADD_I/U3/X2 (U1/ALU_Block/Arithmetic_b/ADD/cin_s<3>)
+     LUT6:I5->O            3   0.097   0.389  U1/ALU_Block/Arithmetic_b/ADD/ADD_B[4].ADD_I/U3/X1 (U1/ALU_Block/Arithmetic_b/ADD/cin_s<5>)
+     LUT6:I4->O            1   0.097   0.556  U1/ALU_Block/Arithmetic_b/Out_s/Mmux_X61 (U1/ALU_Block/out_Arithmetic_s<5>)
+     LUT6:I2->O            1   0.097   0.000  U1/Flags/Zero_Mux/Mmux_X18 (U1/Flags/zero_s)
+     FDRE:D                    0.008          U1/Flags/Zero_D/Q
+    ----------------------------------------
+    Total                      4.139ns (1.448ns logic, 2.691ns route)
+                                       (35.0% logic, 65.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RESET'
+  Clock period: 1.446ns (frequency: 691.659MHz)
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               1.446ns (Levels of Logic = 2)
+  Source:            U1/CU/Sel_Alu_0 (LATCH)
+  Destination:       U1/CU/Sel_Alu_0 (LATCH)
+  Source Clock:      RESET rising
+  Destination Clock: RESET rising
+
+  Data Path: U1/CU/Sel_Alu_0 to U1/CU/Sel_Alu_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q           24   0.475   0.481  U1/CU/Sel_Alu_0 (U1/CU/Sel_Alu_0)
+     LUT2:I0->O            1   0.097   0.295  U1/CU/Mmux_Sel_Alu[1]_reg[14]_MUX_31_o1_SW0 (N2)
+     LUT6:I5->O            1   0.097   0.000  U1/CU/Mmux_Sel_Alu[1]_reg[14]_MUX_31_o1 (U1/CU/Sel_Alu[1]_reg[14]_MUX_31_o)
+     LDE_1:D                  -0.028          U1/CU/Sel_Alu_0
+    ----------------------------------------
+    Total                      1.446ns (0.669ns logic, 0.777ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_stack'
+  Clock period: 2.775ns (frequency: 360.405MHz)
+  Total number of paths / destination ports: 810 / 136
+-------------------------------------------------------------------------
+Delay:               2.775ns (Levels of Logic = 4)
+  Source:            U1/Program_Control/LIFO/cursor_2 (FF)
+  Destination:       U1/Program_Control/LIFO/Out_Stack_7 (FF)
+  Source Clock:      U1/clk_stack rising
+  Destination Clock: U1/clk_stack rising
+
+  Data Path: U1/Program_Control/LIFO/cursor_2 to U1/Program_Control/LIFO/Out_Stack_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            28   0.361   0.617  U1/Program_Control/LIFO/cursor_2 (U1/Program_Control/LIFO/cursor_2)
+     LUT3:I0->O           16   0.097   0.348  U1/Program_Control/LIFO/Msub_GND_107_o_GND_107_o_sub_36_OUT<3:0>_xor<2>11 (U1/Program_Control/LIFO/GND_107_o_GND_107_o_sub_36_OUT<2>)
+     MUXF7:S->O            1   0.335   0.000  U1/Program_Control/LIFO/mux2_4_f7 (U1/Program_Control/LIFO/mux2_4_f7)
+     MUXF8:I0->O           1   0.218   0.693  U1/Program_Control/LIFO/mux2_2_f8 (U1/Program_Control/LIFO/GND_107_o_X_89_o_wide_mux_36_OUT<2>)
+     LUT6:I0->O            1   0.097   0.000  U1/Program_Control/LIFO/mux1011 (U1/Program_Control/LIFO/reg[0][7]_GND_107_o_mux_54_OUT<2>)
+     FDE:D                     0.008          U1/Program_Control/LIFO/Out_Stack_2
+    ----------------------------------------
+    Total                      2.775ns (1.116ns logic, 1.659ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/clk_70Hz'
+  Clock period: 1.314ns (frequency: 761.035MHz)
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               1.314ns (Levels of Logic = 0)
+  Source:            U2/Mshreg_reg_3 (FF)
+  Destination:       U2/reg_3 (FF)
+  Source Clock:      U2/clk_70Hz rising
+  Destination Clock: U2/clk_70Hz rising
+
+  Data Path: U2/Mshreg_reg_3 to U2/reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.306   0.000  U2/Mshreg_reg_3 (U2/Mshreg_reg_3)
+     FDE:D                     0.008          U2/reg_3
+    ----------------------------------------
+    Total                      1.314ns (1.314ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_2'
+  Clock period: 1.659ns (frequency: 602.627MHz)
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               1.659ns (Levels of Logic = 9)
+  Source:            U1/Program_Control/Num/nr_0 (FF)
+  Destination:       U1/Program_Control/Num/nr_7 (FF)
+  Source Clock:      U1/clk_2 rising
+  Destination Clock: U1/clk_2 rising
+
+  Data Path: U1/Program_Control/Num/nr_0 to U1/Program_Control/Num/nr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.361   0.332  U1/Program_Control/Num/nr_0 (U1/Program_Control/Num/nr_0)
+     LUT5:I4->O            1   0.097   0.000  U1/Program_Control/Num/Mcount_nr_lut<0> (U1/Program_Control/Num/Mcount_nr_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  U1/Program_Control/Num/Mcount_nr_cy<0> (U1/Program_Control/Num/Mcount_nr_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<1> (U1/Program_Control/Num/Mcount_nr_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<2> (U1/Program_Control/Num/Mcount_nr_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<3> (U1/Program_Control/Num/Mcount_nr_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<4> (U1/Program_Control/Num/Mcount_nr_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<5> (U1/Program_Control/Num/Mcount_nr_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<6> (U1/Program_Control/Num/Mcount_nr_cy<6>)
+     XORCY:CI->O           1   0.370   0.000  U1/Program_Control/Num/Mcount_nr_xor<7> (U1/Program_Control/Num/Mcount_nr7)
+     FDC:D                     0.008          U1/Program_Control/Num/nr_7
+    ----------------------------------------
+    Total                      1.659ns (1.327ns logic, 0.332ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 6054 / 262
+-------------------------------------------------------------------------
+Offset:              4.607ns (Levels of Logic = 9)
+  Source:            RESET (PAD)
+  Destination:       U1/Flags/Zero_D/Q (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to U1/Flags/Zero_D/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           176   0.001   0.424  RESET_IBUF (RESET_IBUF)
+     LUT3:I2->O           38   0.097   0.664  U1/CU/Read11 (U1/CU/Read1)
+     LUT6:I2->O            1   0.097   0.379  U1/ALU_Block/Arithmetic_b/in_aux_s<1>1_SW1_F (N60)
+     LUT3:I1->O            1   0.097   0.693  U1/ALU_Block/Arithmetic_b/in_aux_s<1>1_SW11 (N34)
+     LUT6:I0->O            2   0.097   0.688  U1/ALU_Block/Logic_b/Mux_out/Mmux_X21 (U1/ALU_Block/out_logic_s<1>)
+     LUT6:I1->O            2   0.097   0.299  U1/Flags/Zero_Mux/Mmux_X13 (U1/Flags/Zero_Mux/Mmux_X12)
+     LUT4:I3->O            1   0.097   0.295  U1/Flags/Zero_Mux/Mmux_X14 (U1/Flags/Zero_Mux/Mmux_X13)
+     LUT6:I5->O            1   0.097   0.379  U1/Flags/Zero_Mux/Mmux_X17_SW1 (N19)
+     LUT6:I4->O            1   0.097   0.000  U1/Flags/Zero_Mux/Mmux_X18 (U1/Flags/zero_s)
+     FDRE:D                    0.008          U1/Flags/Zero_D/Q
+    ----------------------------------------
+    Total                      4.607ns (0.785ns logic, 3.822ns route)
+                                       (17.0% logic, 83.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clk_stack'
+  Total number of paths / destination ports: 2067 / 379
+-------------------------------------------------------------------------
+Offset:              3.326ns (Levels of Logic = 5)
+  Source:            RESET (PAD)
+  Destination:       U1/Program_Control/LIFO/reg_10_7 (FF)
+  Destination Clock: U1/clk_stack rising
+
+  Data Path: RESET to U1/Program_Control/LIFO/reg_10_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           176   0.001   0.685  RESET_IBUF (RESET_IBUF)
+     LUT5:I1->O            1   0.097   0.511  U1/CU/Mmux_Sel_prog_flow21 (U1/sel_prog_flow_s<1>)
+     LUT3:I0->O            6   0.097   0.534  U1/Program_Control/Stack<1>111 (U1/Program_Control/Stack<1>11)
+     LUT5:I2->O           27   0.097   0.799  U1/Program_Control/Stack<0>1 (U1/Program_Control/Stack<0>)
+     LUT6:I0->O            8   0.097   0.311  U1/Program_Control/LIFO/_n0455_inv1 (U1/Program_Control/LIFO/_n0455_inv)
+     FDCE:CE                   0.095          U1/Program_Control/LIFO/reg_10_0
+    ----------------------------------------
+    Total                      3.326ns (0.484ns logic, 2.842ns route)
+                                       (14.6% logic, 85.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clk_2'
+  Total number of paths / destination ports: 408 / 16
+-------------------------------------------------------------------------
+Offset:              3.704ns (Levels of Logic = 13)
+  Source:            RESET (PAD)
+  Destination:       U1/Program_Control/Num/nr_7 (FF)
+  Destination Clock: U1/clk_2 rising
+
+  Data Path: RESET to U1/Program_Control/Num/nr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           176   0.001   0.685  RESET_IBUF (RESET_IBUF)
+     LUT5:I1->O            1   0.097   0.511  U1/CU/Mmux_Sel_prog_flow21 (U1/sel_prog_flow_s<1>)
+     LUT3:I0->O            6   0.097   0.534  U1/Program_Control/Stack<1>111 (U1/Program_Control/Stack<1>11)
+     LUT5:I2->O            8   0.097   0.715  U1/Program_Control/load1 (U1/Program_Control/load)
+     LUT5:I0->O            1   0.097   0.000  U1/Program_Control/Num/Mcount_nr_lut<0> (U1/Program_Control/Num/Mcount_nr_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  U1/Program_Control/Num/Mcount_nr_cy<0> (U1/Program_Control/Num/Mcount_nr_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<1> (U1/Program_Control/Num/Mcount_nr_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<2> (U1/Program_Control/Num/Mcount_nr_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<3> (U1/Program_Control/Num/Mcount_nr_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<4> (U1/Program_Control/Num/Mcount_nr_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<5> (U1/Program_Control/Num/Mcount_nr_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  U1/Program_Control/Num/Mcount_nr_cy<6> (U1/Program_Control/Num/Mcount_nr_cy<6>)
+     XORCY:CI->O           1   0.370   0.000  U1/Program_Control/Num/Mcount_nr_xor<7> (U1/Program_Control/Num/Mcount_nr7)
+     FDC:D                     0.008          U1/Program_Control/Num/nr_7
+    ----------------------------------------
+    Total                      3.704ns (1.258ns logic, 2.446ns route)
+                                       (34.0% logic, 66.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U2/clk_70Hz'
+  Total number of paths / destination ports: 352 / 11
+-------------------------------------------------------------------------
+Offset:              3.080ns (Levels of Logic = 5)
+  Source:            U2/reg_1 (FF)
+  Destination:       Out_Cat<6> (PAD)
+  Source Clock:      U2/clk_70Hz rising
+
+  Data Path: U2/reg_1 to Out_Cat<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.361   0.598  U2/reg_1 (U2/reg_1)
+     LUT4:I0->O            4   0.097   0.570  U2/Mmux_outp21 (U2/Mmux_outp1)
+     LUT4:I0->O            1   0.097   0.295  U2/Mmux_outp12 (U2/Mmux_outp11)
+     LUT4:I3->O            8   0.097   0.589  U2/Mmux_outp15 (Out_An_0_OBUF)
+     LUT4:I0->O            1   0.097   0.279  U2/Mram_segm31 (Out_Cat_3_OBUF)
+     OBUF:I->O                 0.000          Out_Cat_3_OBUF (Out_Cat<3>)
+    ----------------------------------------
+    Total                      3.080ns (0.749ns logic, 2.331ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/clock/opt'
+  Total number of paths / destination ports: 1574 / 13
+-------------------------------------------------------------------------
+Offset:              5.637ns (Levels of Logic = 7)
+  Source:            U1_Memory/Mram_inst (RAM)
+  Destination:       Out_Cat<0> (PAD)
+  Source Clock:      U1/clock/opt rising
+
+  Data Path: U1_Memory/Mram_inst to Out_Cat<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO9   49   1.846   0.803  U1_Memory/Mram_inst (U1/instruction_s<9>)
+     LUT6:I0->O            1   0.097   0.000  U1/Regi/MUX_X/Mmux_outp_511 (U1/Regi/MUX_X/Mmux_outp_511)
+     MUXF7:I1->O           1   0.279   0.000  U1/Regi/MUX_X/Mmux_outp_4_f7_4 (U1/Regi/MUX_X/Mmux_outp_4_f75)
+     MUXF8:I0->O          10   0.218   0.725  U1/Regi/MUX_X/Mmux_outp_2_f8_4 (U1/Regi/out_x_s<5>)
+     LUT6:I1->O            1   0.097   0.511  U2/Mmux_outp23 (U2/Mmux_outp22)
+     LUT4:I1->O            8   0.097   0.589  U2/Mmux_outp25 (Out_An_1_OBUF)
+     LUT4:I0->O            1   0.097   0.279  U2/Mram_segm11 (Out_Cat_0_OBUF)
+     OBUF:I->O                 0.000          Out_Cat_0_OBUF (Out_Cat<0>)
+    ----------------------------------------
+    Total                      5.637ns (2.731ns logic, 2.906ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2050 / 13
+-------------------------------------------------------------------------
+Offset:              3.910ns (Levels of Logic = 7)
+  Source:            U1/Regi/REGI[6].PIECE/REG[5].FF/Q (FF)
+  Destination:       Out_Cat<0> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U1/Regi/REGI[6].PIECE/REG[5].FF/Q to Out_Cat<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.361   0.561  U1/Regi/REGI[6].PIECE/REG[5].FF/Q (U1/Regi/REGI[6].PIECE/REG[5].FF/Q)
+     LUT6:I2->O            1   0.097   0.000  U1/Regi/MUX_X/Mmux_outp_511 (U1/Regi/MUX_X/Mmux_outp_511)
+     MUXF7:I1->O           1   0.279   0.000  U1/Regi/MUX_X/Mmux_outp_4_f7_4 (U1/Regi/MUX_X/Mmux_outp_4_f75)
+     MUXF8:I0->O          10   0.218   0.725  U1/Regi/MUX_X/Mmux_outp_2_f8_4 (U1/Regi/out_x_s<5>)
+     LUT6:I1->O            1   0.097   0.511  U2/Mmux_outp23 (U2/Mmux_outp22)
+     LUT4:I1->O            8   0.097   0.589  U2/Mmux_outp25 (Out_An_1_OBUF)
+     LUT4:I0->O            1   0.097   0.279  U2/Mram_segm11 (Out_Cat_0_OBUF)
+     OBUF:I->O                 0.000          Out_Cat_0_OBUF (Out_Cat<0>)
+    ----------------------------------------
+    Total                      3.910ns (1.246ns logic, 2.664ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/CU/Read1'
+  Total number of paths / destination ports: 64 / 11
+-------------------------------------------------------------------------
+Offset:              2.554ns (Levels of Logic = 4)
+  Source:            U1/CU/Sel_port (LATCH)
+  Destination:       Out_Cat<6> (PAD)
+  Source Clock:      U1/CU/Read1 falling
+
+  Data Path: U1/CU/Sel_port to Out_Cat<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               8   0.472   0.543  U1/CU/Sel_port (U1/CU/Sel_port)
+     LUT6:I3->O            1   0.097   0.379  U2/Mmux_outp24 (U2/Mmux_outp23)
+     LUT4:I2->O            8   0.097   0.589  U2/Mmux_outp25 (Out_An_1_OBUF)
+     LUT4:I0->O            1   0.097   0.279  U2/Mram_segm11 (Out_Cat_0_OBUF)
+     OBUF:I->O                 0.000          Out_Cat_0_OBUF (Out_Cat<0>)
+    ----------------------------------------
+    Total                      2.554ns (0.763ns logic, 1.791ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Zero_OBUF'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.242ns (Levels of Logic = 2)
+  Source:            U1/clock/cond (LATCH)
+  Destination:       READ_STROBE (PAD)
+  Source Clock:      Zero_OBUF falling
+
+  Data Path: U1/clock/cond to READ_STROBE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q              4   0.472   0.393  U1/clock/cond (U1/clock/cond)
+     LUT6:I4->O            1   0.097   0.279  U1/clk_write1 (WRITE_STROBE_OBUF)
+     OBUF:I->O                 0.000          WRITE_STROBE_OBUF (WRITE_STROBE)
+    ----------------------------------------
+    Total                      1.242ns (0.569ns logic, 0.673ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 34 / 13
+-------------------------------------------------------------------------
+Delay:               3.043ns (Levels of Logic = 6)
+  Source:            RESET (PAD)
+  Destination:       Out_Cat<6> (PAD)
+
+  Data Path: RESET to Out_Cat<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           176   0.001   0.640  RESET_IBUF (RESET_IBUF)
+     LUT4:I1->O           18   0.097   0.635  U1/ALU_Block/Arithmetic_b/ADD/ADD_B[4].ADD_I/Y_OUT/Mxor_X_xo<0>11_SW1 (U1/write_s)
+     LUT6:I2->O            1   0.097   0.511  U2/Mmux_outp23 (U2/Mmux_outp22)
+     LUT4:I1->O            8   0.097   0.589  U2/Mmux_outp25 (Out_An_1_OBUF)
+     LUT4:I0->O            1   0.097   0.279  U2/Mram_segm11 (Out_Cat_0_OBUF)
+     OBUF:I->O                 0.000          Out_Cat_0_OBUF (Out_Cat<0>)
+    ----------------------------------------
+    Total                      3.043ns (0.389ns logic, 2.654ns route)
+                                       (12.8% logic, 87.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.139|         |    1.048|         |
+RESET          |    4.702|         |         |         |
+U1/clock/opt   |    6.649|         |         |         |
+Zero_OBUF      |         |    2.350|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RESET
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RESET          |    1.446|         |         |         |
+U1/clock/opt   |    2.992|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/CU/Read1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clock/opt   |         |         |    2.148|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clk_2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.154|         |         |         |
+U1/clk_2       |    1.659|         |         |         |
+U1/clk_stack   |    1.838|         |         |         |
+U1/clock/opt   |    5.653|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clk_stack
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.776|         |         |         |
+U1/clk_2       |    1.663|         |         |         |
+U1/clk_stack   |    2.775|         |         |         |
+U1/clock/opt   |    5.275|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clock/opt
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clk_2       |    1.119|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U2/clk_70Hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/clk_70Hz    |    1.314|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Zero_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    1.017|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.35 secs
+ 
+--> 
+
+Total memory usage is 4597724 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

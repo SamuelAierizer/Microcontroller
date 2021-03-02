@@ -1,0 +1,96 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=Program_Control
+
+[Library]
+Program_Control=.\Program_Control.lib
+
+[$LibMap$]
+Program_Control=.
+Active_lib=
+
+[Settings]
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=ONLY_IMPL
+REFRESH_FLOW=1
+FUNC_LIB=Program_Control
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=ms|arh_ms|0         
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=d:\College\Microcontroller\Program_Control\
+Extension3=mak
+Name4=Memory
+Directory4=d:\College\Microcontroller\Program_Control\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=d:\College\Microcontroller\Program_Control\
+Extension5=dll
+
+[SIM.FUNC]
+FJD=FunctionalSimJob1
+FST=-all
+OPTION=0
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=log\*.*:synthesis\*.*:implement\*.*
+TOPLEVEL=kcpsm
+WAVEFORMS=
+DEFWAVE=0
+
+[Files]
+/Register_Block.vhd=-1
+/Program_Memory.vhd=-1
+/Port_Address_Control.vhd=-1
+/Zero_Carry_Flags.vhd=-1
+/Interrupt_Flag_Store.vhd=-1
+/Program_Flow_Control.vhd=-1
+/Control_Unit.vhd=-1
+/kcpsm.vhd=-1
+/Shift_Left.vhd=-1
+/Logic_Block.vhd=-1
+/Shift_Rigtht.vhd=-1
+/Alu.vhd=-1
+/Arithmetic_Block.vhd=-1
+/Program_Counter_Stack.vhd=-1
+/fgpa.vhd=-1
+/Afisor.vhd=-1
+/kcpsm.awf=-1
+/temp.awf=-1
+
+[Files.Data]
+.\src\Register_Block.vhd=VHDL Source Code
+.\src\Program_Memory.vhd=VHDL Source Code
+.\src\Port_Address_Control.vhd=VHDL Source Code
+.\src\Zero_Carry_Flags.vhd=VHDL Source Code
+.\src\Interrupt_Flag_Store.vhd=VHDL Source Code
+.\src\Program_Flow_Control.vhd=VHDL Source Code
+.\src\Control_Unit.vhd=VHDL Source Code
+.\src\kcpsm.vhd=VHDL Source Code
+.\src\Shift_Left.vhd=VHDL Source Code
+.\src\Logic_Block.vhd=VHDL Source Code
+.\src\Shift_Rigtht.vhd=VHDL Source Code
+.\src\Alu.vhd=VHDL Source Code
+.\src\Arithmetic_Block.vhd=VHDL Source Code
+.\src\Program_Counter_Stack.vhd=VHDL Source Code
+.\src\fgpa.vhd=VHDL Source Code
+.\src\Afisor.vhd=VHDL Source Code
+.\src\kcpsm.awf=Waveform File
+.\src\temp.awf=Waveform File
+

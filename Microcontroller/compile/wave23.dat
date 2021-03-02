@@ -1,0 +1,17 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#3#mem1 rict0 14 a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 3 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 481 1 15 reg
+$SC 1-477/4
+$BUS IN +52 2 8 In_Stack
+$SC 497-+28/4
+I 4 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN +13 4 2 0 5 ""
+$SC +-8 +4
+$IN +5 3 Reset
+$IN +4 3 Clock
+$BUS OUT +36 2 8 Out_Stack
+$SC 547-+28/4
+$ENDWAVE

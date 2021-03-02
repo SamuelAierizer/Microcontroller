@@ -1,0 +1,23 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 Carry
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 37 2 8 reg
+$SC 5-33/4
+$IN +5 1 Zero
+$BUS IN 74 2 8 Const
+$SC 42-70/4
+I 3 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 95 3 5 Sel
+$SC 75-91/4
+$BUS OUT +37 2 8 Address
+$SC 96-+28/4
+$BUS IN +37 2 8 Prev
+$SC 129-+28/4
+$BUS OUT +37 2 8 Prev_generate
+$SC 162-+28/4
+I 4 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +13 4 2 Stack
+$SC +-8 +4
+$ENDWAVE

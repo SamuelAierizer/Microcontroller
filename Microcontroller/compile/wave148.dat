@@ -1,0 +1,184 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 CLK
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 37 2 8 from_stack
+$SC 5-33/4
+$BUS S 70 2 8 par_load
+$SC 38-66/4
+$BUS S +37 2 8 add_s
+$SC 71-99/4
+$S +5 1 mux_cond
+$BUS S +36 2 8 to_stack
+$SC 108-+28/4
+$S +5 1 en_s
+$BUS IN +36 2 8 Const
+$SC 145-+28/4
+$IN +5 1 R
+$S +4 1 c_and4
+I 3 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +12 3 2 Stack
+$SC +-8 +4
+$IN +5 1 Zero
+$S +4 1 Load
+$S +4 1 c_and1
+$BUS OUT +36 2 8 Address
+$SC 207-+28/4
+$S +5 1 c_and2
+$S +4 1 s0_and1
+$IN +4 1 Carry
+$IN 1 0 Clk
+$S 252 1 cond
+$S +4 1 c_and3
+$S +4 1 s1_and1
+I 4 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN +24 4 5 Sel
+$SC 264-+16/4
+$S +5 1 s0_and2
+$S +4 1 1 5 "1"
+$S +4 1 6 0 "3"
+$IN +4 1 EN
+$S +4 1 s1_and4
+$ENDTIME 10000
+$WAVES 260
+=0 T 0
+=1 D 0 1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 1 141-+16/4 297
+*0
+$VALUES
+V 1
+1
+$END
+$WAVES 5-33/4 71-99/4 +9-+28/4 +71-+28/4
+*0
+$VALUES
+V 1
+U
+$END
+$WAVES 38-50/4 186
+*0
+=2 D 0 2
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 54-66/4 190 +62
+*0
+*2
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 104 +78 +21 +37 +4 +12 +29-+8/4 +8
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 161-+12/4 +5 +17 +4 +49 +16-+16/4
+*0
+$VALUES
+V 1
+0
+$END
+$ENDTIME 20000
+$WAVES 1
+=3 D 10k 1
+$VALUES
+V 1
+0
+$END
+$ENDTIME 30000
+$WAVES 1
+=4 D 20k 1
+$VALUES
+V 1
+1
+$END
+$ENDTIME 40000
+$WAVES 1
+=5 D 30k 1
+$VALUES
+V 1
+0
+$END
+$ENDTIME 50000
+$WAVES 1
+=6 D 40k 1
+$VALUES
+V 1
+1
+$END
+$WAVES 5
+=7 D 40k 2
+$VALUES
+V 1
+0
+$END
+$WAVES 9
+*7
+$VALUES
+V 1
+0
+$END
+$WAVES +4
+*7
+$VALUES
+V 1
+0
+$END
+$WAVES +4
+*7
+$VALUES
+V 1
+0
+$END
+$WAVES +4
+*7
+$VALUES
+V 1
+0
+$END
+$WAVES +4
+*7
+$VALUES
+V 1
+0
+$END
+$WAVES +4
+*7
+$VALUES
+V 1
+0
+$END
+$WAVES +4
+*7
+$VALUES
+V 1
+0
+$END
+$ENDTIME 60000
+$WAVES 1
+=8 D 50k 1
+$VALUES
+V 1
+0
+$END
+$ENDTIME 70000
+$WAVES 1
+=9 D 60k 1
+$VALUES
+V 1
+1
+$END
+$ENDWAVE

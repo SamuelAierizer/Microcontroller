@@ -1,0 +1,10 @@
+i<>.\src\Register_Block.vhd
+i<>.\src\Program_Memory.vhd
+i<>.\src\Port_Address_Control.vhd
+i<>.\src\Flags_Carry_Flags.vhd
+i<>.\src\Interrupt_Flag_Store.vhd
+i<>.\src\Program_Flow_Control.vhd
+i<>.\src\Control_Unit.vhd
+i<>.\src\kcpsm.vhd
+i<>.\src\Program_Counter_Stack.vhd
+i<>.\src\fgpa.vhd

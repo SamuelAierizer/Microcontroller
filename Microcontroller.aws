@@ -1,0 +1,16 @@
+[Version]
+Version=6.3
+[Designs]
+program_control=.\Microcontroller\Program_Control.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+alu=0
+print=0
+program_control=1
+[Settings]
+Active=program_control

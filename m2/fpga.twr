@@ -1,0 +1,135 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml fpga.twx fpga.ncd -o fpga.twr fpga.pcf -ucf fpga.ucf
+
+Design file:              fpga.ncd
+Physical constraint file: fpga.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+INTERRUPT   |    0.713(R)|      FAST  |    1.558(R)|      SLOW  |CLK_BUFGP         |   0.000|
+IN_PORT<0>  |    3.452(R)|      SLOW  |   -0.381(R)|      FAST  |CLK_BUFGP         |   0.000|
+IN_PORT<1>  |    3.910(R)|      SLOW  |   -0.411(R)|      FAST  |CLK_BUFGP         |   0.000|
+IN_PORT<2>  |    3.723(R)|      SLOW  |    0.046(R)|      SLOW  |CLK_BUFGP         |   0.000|
+IN_PORT<3>  |    3.610(R)|      SLOW  |    0.214(R)|      SLOW  |CLK_BUFGP         |   0.000|
+IN_PORT<4>  |    3.252(R)|      SLOW  |    0.297(R)|      SLOW  |CLK_BUFGP         |   0.000|
+IN_PORT<5>  |    3.288(R)|      SLOW  |    0.043(R)|      SLOW  |CLK_BUFGP         |   0.000|
+IN_PORT<6>  |    1.536(R)|      SLOW  |    0.609(R)|      SLOW  |CLK_BUFGP         |   0.000|
+IN_PORT<7>  |    3.024(R)|      SLOW  |   -0.027(R)|      SLOW  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out_An<0>   |        13.878(R)|      SLOW  |         5.291(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_An<1>   |        14.030(R)|      SLOW  |         5.309(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_An<2>   |        12.759(R)|      SLOW  |         4.732(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_An<3>   |        14.506(R)|      SLOW  |         5.656(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<0>  |        14.122(R)|      SLOW  |         5.035(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<1>  |        13.963(R)|      SLOW  |         4.881(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<2>  |        15.084(R)|      SLOW  |         5.586(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<3>  |        14.910(R)|      SLOW  |         5.333(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<4>  |        14.187(R)|      SLOW  |         5.043(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<5>  |        13.945(R)|      SLOW  |         4.862(R)|      FAST  |CLK_BUFGP         |   0.000|
+Out_Cat<6>  |        14.730(R)|      SLOW  |         5.409(R)|      FAST  |CLK_BUFGP         |   0.000|
+READ_STROBE |        10.566(R)|      SLOW  |         4.095(R)|      FAST  |CLK_BUFGP         |   0.000|
+WRITE_STROBE|        10.233(R)|      SLOW  |         3.967(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock RESET to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out_An<0>   |        12.451(F)|      SLOW  |         5.335(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_An<1>   |        12.238(F)|      SLOW  |         5.330(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_An<2>   |        11.431(F)|      SLOW  |         4.899(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_An<3>   |        12.942(F)|      SLOW  |         5.826(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<0>  |        12.330(F)|      SLOW  |         5.089(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<1>  |        12.396(F)|      SLOW  |         5.049(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<2>  |        13.536(F)|      SLOW  |         5.704(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<3>  |        13.170(F)|      SLOW  |         5.506(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<4>  |        12.395(F)|      SLOW  |         5.102(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<5>  |        12.378(F)|      SLOW  |         5.030(F)|      FAST  |U1/CU/Read1       |   0.000|
+Out_Cat<6>  |        13.182(F)|      SLOW  |         5.529(F)|      FAST  |U1/CU/Read1       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.776|         |         |    0.938|
+RESET          |    7.882|    5.041|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RESET
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RESET          |    1.236|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+RESET          |Out_An<0>      |   11.161|
+RESET          |Out_An<1>      |   11.261|
+RESET          |Out_An<2>      |   10.113|
+RESET          |Out_An<3>      |   11.377|
+RESET          |Out_Cat<0>     |   11.353|
+RESET          |Out_Cat<1>     |   10.973|
+RESET          |Out_Cat<2>     |   12.246|
+RESET          |Out_Cat<3>     |   12.141|
+RESET          |Out_Cat<4>     |   11.418|
+RESET          |Out_Cat<5>     |   10.970|
+RESET          |Out_Cat<6>     |   11.892|
+RESET          |READ_STROBE    |    7.352|
+RESET          |WRITE_STROBE   |    7.358|
+---------------+---------------+---------+
+
+
+Analysis completed Tue May 21 11:47:05 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5005 MB
+
+
+

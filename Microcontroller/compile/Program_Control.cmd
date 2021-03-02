@@ -1,0 +1,1 @@
+-w -s "d:\College\Microcontroller\library.cfg"  -j "d:\College\Microcontroller\Microcontroller\projlib.cfg"  -d "d:\College\Microcontroller\Microcontroller\compile\"  -work Program_Control -dbg -e 100 "d:\College\Microcontroller\Microcontroller\src\Program_Flow_Control.vhd" 

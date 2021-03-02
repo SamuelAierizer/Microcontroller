@@ -1,0 +1,47 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 33 1 8 OUT_PORT
+$SC 1-29/4
+$BUS S 66 1 8 PORT_ID
+$SC 34-62/4
+$S +5 2 READ_STROBE
+$S +4 2 0 7 WRITE
+$BUS S +36 1 8 IN_PORT
+$SC 75-+28/4
+$S +5 2 CLK
+$S +4 2 INTERRUPT
+$S +4 2 RESET
+$BUS S +4 1 8 IN_PORT
+$SC 75-+28/4
+$BUS S +18 1 8 Out_Port
+$SC 1-29/4
+$BUS S +93 1 8 Port_Id
+$SC 34-62/4
+$S +46 0 CLK
+$S 67 0 Read_Strobe
+$S +4 0 0 7 Write
+$S +41 0 INTERRUPT
+$S +4 0 Reset
+$BUS S +39 1 8 "UCT/address_s"
+$SC 123-+28/4
+I 3 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +17 3 3 4 2 opt_alu
+$SC 156-+8/4
+I 4 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +13 4 2 4 6 sel
+$SC +-8 +4
+$S +5 2 4 2 alu_enable
+$BUS S +36 1 8 4 2 out_x
+$SC 182-+28/4
+I 5 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +21 5 4 4 4 sel
+$SC 215-+12/4
+$BUS S +37 1 8 4 2 out_y
+$SC 232-+28/4
+$BUS S +21 5 4 4 4 sel
+$SC 265-+12/4
+$BUS S +37 1 8 4 2 out_alu
+$SC 282-+28/4
+$ENDWAVE

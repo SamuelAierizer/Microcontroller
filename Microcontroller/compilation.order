@@ -1,0 +1,16 @@
+.\src\Register_Block.vhd
+.\src\Program_Memory.vhd
+.\src\Port_Address_Control.vhd
+.\src\Zero_Carry_Flags.vhd
+.\src\Interrupt_Flag_Store.vhd
+.\src\Program_Flow_Control.vhd
+.\src\Control_Unit.vhd
+.\src\kcpsm.vhd
+.\src\Shift_Left.vhd
+.\src\Logic_Block.vhd
+.\src\Shift_Rigtht.vhd
+.\src\Alu.vhd
+.\src\Arithmetic_Block.vhd
+.\src\Program_Counter_Stack.vhd
+.\src\fgpa.vhd
+.\src\Afisor.vhd

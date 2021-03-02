@@ -1,0 +1,126 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$IN 1 1 INTERRUPT
+$IN 5 1 RESET
+$IN 9 1 CLK
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT 45 2 8 OUT_PORT
+$SC 13-41/4
+$BUS OUT 78 2 8 PORT_ID
+$SC 46-74/4
+$BUS IN +37 2 8 IN_PORT
+$SC 79-+28/4
+I 3 "a#28#std_logic_vector(4 downto 0)1 ricd4 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +25 3 5 sel_prog_flow_s
+$SC 112-+16/4
+$S +5 1 zero_s
+$BUS S +36 2 8 address_s
+$SC 137-+28/4
+I 4 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +17 4 3 opt_alu_s
+$SC 170-+8/4
+I 5 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +21 5 4 sel_y_s
+$SC 183-+12/4
+I 6 "a#28#std_logic_vector(1 downto 0)1 ricd1 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +13 6 2 4 2 alu
+$SC +-8 +4
+$OUT +5 1 READ_STROBE
+$OUT +4 1 0 7 WRITE
+$S +4 1 alu_enable_s
+$S +4 1 zero_alu_s
+$BUS S +36 2 8 const_s
+$SC 225-+28/4
+$BUS S +37 2 8 from_stack_s
+$SC 258-+28/4
+$BUS S +37 2 8 0 8 to
+$SC 291-+28/4
+$S +5 1 clk_regi_s
+$BUS S +12 6 2 stack_s
+$SC +-8 +4
+I 7 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +69 7 16 instruction_s
+$SC 337-+60/4
+$BUS S +21 5 4 sel_x_s
+$SC 402-+12/4
+$S +5 1 opt_reg_s
+$S +4 1 sel_port_s
+$S +4 1 carry_alu_s
+$BUS S +36 2 8 out_x_s
+$SC 431-+28/4
+$S +5 1 read_s
+$S +4 1 write_s
+$S +4 1 reset_flags_s
+$S +4 1 save_s
+$BUS S +36 2 8 control_address_s
+$SC 480-+28/4
+$BUS S +37 2 8 out_alu_s
+$SC 513-+28/4
+$BUS S +37 2 8 in_regi
+$SC 546-+28/4
+$S +5 1 carry_s
+$BUS S +36 2 8 out_y_s
+$SC 583-+28/4
+$S +5 1 regi_in_s
+$S +4 1 carry_save_s
+$S +4 1 0 7 zero
+$IN 1 0 INTERRUPT
+$BUS OUT 628 2 8 PORT_ID
+$SC 46-74/4
+$OUT 209 0 READ_STROBE
+$OUT +4 0 0 7 WRITE
+$IN 5 0 RESET
+$BUS IN 629 2 8 IN_PORT
+$SC 79-+28/4
+$BUS S 630 2 8 in_regi
+$SC 546-+28/4
+$BUS S +57 4 3 opt_alu_s
+$SC 170-+8/4
+$BUS S 632 6 2 0 6 sel
+$SC 200 +4
+$S +13 0 alu_enable_s
+$S 427 0 carry_alu_s
+$BUS S 633 2 8 address_s
+$SC 137-+28/4
+$S +56 0 zero_alu_s
+$BUS OUT 634 2 8 OUT_PORT
+$SC 13-41/4
+$IN 9 0 CLK
+$BUS S 635 2 8 out_y_s
+$SC 583-+28/4
+$BUS S +25 7 16 instruction_s
+$SC 337-+60/4
+$BUS S 637 2 8 out_x_s
+$SC 431-+28/4
+$BUS S 638 2 8 const_s
+$SC 225-+28/4
+$BUS S 639 2 8 out_alu_s
+$SC 513-+28/4
+$BUS S +99 2 8 to_stack_s
+$SC 291-+28/4
+$S +5 0 clk_regi_s
+$S +95 0 opt_reg_s
+$S 616 0 regi_in_s
+$BUS S +25 5 4 sel_x_s
+$SC 402-+12/4
+$BUS S 642 2 8 control_address_s
+$SC 480-+28/4
+$BUS S 643 5 4 sel_y_s
+$SC 183-+12/4
+$S 468 0 write_s
+$BUS S 644 3 5 sel_prog_flow_s
+$SC 112-+16/4
+$S +5 0 zero_s
+$S 423 0 sel_port_s
+$S +41 0 read_s
+$S +8 0 reset_flags_s
+$S 624 0 zero_save_s
+$BUS S +21 2 8 from_stack_s
+$SC 258-+28/4
+$S 579 0 carry_s
+$BUS S +67 6 2 stack_s
+$SC 328 +4
+$S 476 0 save_s
+$S 620 0 0 6 carry_
+$ENDWAVE
